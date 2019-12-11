@@ -1,0 +1,132 @@
+@import './src/scss/partials/_fonts';
+@import './src/scss/partials/_mixins';
+
+.about-us {
+  background-color: #fff;
+}
+
+.about-us-wrapper {
+  max-width: 1600px;
+  position: relative;
+  margin: 0 auto;
+  padding: 90px 0 90px 215px;
+  overflow: hidden;
+
+  .title {
+    max-width: 300px;
+    position: relative;
+    margin-bottom: 70px;
+    font-size: 60px;
+    font-weight: 900;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    line-height: 1.2;
+    color: #383738;
+
+    .color-orange {
+      color: #fc9e20;
+    }
+
+    &::after {
+      content: '';
+      width: 205px;
+      height: 8px;
+      position: absolute;
+      bottom: -40px;
+      left: 0;
+      background-color: #fc9e20;
+    }
+  }
+
+  .description {
+    max-width: 380px;
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: normal;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.25;
+    color: #040404;
+
+    .font-lighter {
+      font-weight: lighter;
+    }
+  }
+
+  .gallery {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    li {
+      width: 36%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      clip-path: polygon(0 50%, 50% 0, 100% 50%, 50% 100%);
+
+      &:nth-child(1) {
+        width: 25%;
+        border: 27px solid #fdd28e;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        @include transform(translateX(-115%) translateY(-50%) rotateZ(45deg));
+
+        .empty-square {
+          width: 100%;
+          position: relative;
+          padding-top: 100%;
+    
+          &::after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        @include transform(translateX(30%) translateY(-35%));
+      }
+
+      &:nth-child(3) {
+        @include transform(translateX(-25%) translateY(20%));
+      }
+
+      &:nth-child(4) {
+        @include transform(translateX(30%) translateY(75%));
+      }
+
+      &:nth-child(5) {
+        @include transform(translateX(-80%) translateY(75%));
+      }
+
+      .img-wrapper {
+        width: 100%;
+        position: relative;
+        padding-top: 100%;
+
+        &::after {
+          content: '';
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          @include objectFit(cover);
+        }
+      }
+    }
+  }
+}
