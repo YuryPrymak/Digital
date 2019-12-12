@@ -1,0 +1,88 @@
+@import './src/scss/partials/_fonts';
+@import './src/scss/partials/_mixins';
+
+.our-advantages {
+  background-color: #2f2f2f;
+}
+
+.our-advantages-wrapper {
+  max-width: 1600px;
+  display: flex;
+  margin: 0 auto;
+  padding: 90px 215px 90px 0;
+
+  img {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    @include objectFit(cover);
+  }
+
+  .advantages-info {
+    width: 100%;
+    max-width: 585px;
+
+    > .title {
+      max-width: 285px;
+      margin: 0 0 60px 70px;
+      font-size: 48px;
+      font-weight: 900;
+      font-family: 'Lato', sans-serif;
+      text-transform: uppercase;
+      line-height: 1.2;
+      color: #fff;
+
+      .color-orange {
+        color: #fc9e20;
+      }
+    }
+
+    .advantages {
+      li {
+        position: relative;
+        margin: 0 0 50px 235px;
+
+        &:nth-child(1)::before {
+          background: url('/src/img/advantages/Icon1.png') center no-repeat;
+        }
+
+        &:nth-child(2)::before {
+          background: url('/src/img/advantages/Icon2.png') center no-repeat;
+        }
+
+        &:nth-child(3)::before {
+          background: url('/src/img/advantages/Icon3.png') center no-repeat;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &::before {
+          content: '';
+          width: 85px;
+          height: 85px;
+          position: absolute;
+          top: 0;
+          left: -155px;
+        }
+
+        .title {
+          margin-bottom: 15px;
+          font-size: 18px;
+          font-weight: 900;
+          font-family: 'Lato', sans-serif;
+          text-transform: uppercase;
+          color: #fff;
+        }
+
+        .description {
+          font-size: 18px;
+          font-weight: normal;
+          font-family: 'Lato', sans-serif;
+          color: #9b9b9b;
+        }
+      }
+    }
+  }
+}
