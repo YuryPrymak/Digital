@@ -9,3 +9,4 @@ import './scss/our-advantages.scss';
 import './scss/services.scss';
 import './scss/testimonials.scss';
 import './scss/get-in-touch.scss';
+import './scss/footer.scss';
