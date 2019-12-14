@@ -9,15 +9,15 @@
   <link rel="stylesheet" href="dist/main.css">
 </head>
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <nav class="nav">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Blog</a></li>
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about-us">About us</a></li>
+        <li><a href="#our-advantages">Advantages</a></li>
       </ul>
       <div class="logo-and-social">
-        <a class="logo">digital<span class="color-orange">.</span></a>
+        <a href="#" class="logo">digital<span class="color-orange">.</span></a>
         <ul class="social">
           <li>
             <a href="#" target="_blank">
@@ -37,11 +37,21 @@
         </ul>
       </div>
       <ul>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Pages</a></li>
-        <li><a href="#">Contact us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#get-in-touch">Contacts</a></li>
       </ul>
+      <button class="btn-close-nav">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" preserveAspectRatio="none">
+        <path d="M18.984 6.422l-5.578 5.578 5.578 5.578-1.406 1.406-5.578-5.578-5.578 5.578-1.406-1.406 5.578-5.578-5.578-5.578 1.406-1.406 5.578 5.578 5.578-5.578z"></path>
+        </svg>
+      </button>
     </nav>
+    <button class="btn-open-nav">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="28" viewBox="0 0 24 28" preserveAspectRatio="none">
+      <path d="M24 21v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1zM24 13v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1zM24 5v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1z"></path>
+      </svg>
+    </button>
     <h1 class="title">This is the future of web design.</h1>
     <p class="description">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporesse cillum dolore eu fugiat nulla eu fugiat nulla pariatur.
@@ -50,7 +60,7 @@
   </header>
 
   <main>
-    <section class="about-us">
+    <section class="about-us" id="about-us">
       <div class="about-us-wrapper">
         <h2 class="title"><span class="color-orange">We are</span> creative team</h2>
         <p class="description">
@@ -166,7 +176,7 @@
       </div>
     </section>
 
-    <section class="our-advantages">
+    <section class="our-advantages" id="our-advantages">
       <div class="our-advantages-wrapper">
         <img src="/src/img/advantages/1.jpg" alt="Desk">
         <div class="advantages-info">
@@ -201,7 +211,7 @@
       </div>
     </section>
 
-    <section class="services">
+    <section class="services" id="services">
       <div class="services-wrapper">
         <div class="about-services">
           <h2 class="title"><span class="color-orange">Our</span><br> best services</h2>
@@ -249,7 +259,7 @@
       </div>
     </section>
 
-    <section class="testimonials">
+    <section class="testimonials" id="testimonials">
       <div class="testimonials-wrapper">
         <div class="testimonials-info">
           <h2 class="title"><span class="color-orange">Our</span><br> client say</h2>
@@ -299,7 +309,7 @@
       </div>
     </section>
 
-    <section class="get-in-touch">
+    <section class="get-in-touch" id="get-in-touch">
       <h2 class="title"><span class="color-orange">Get</span> in touch</h2>
       <ul class="social">
         <li>

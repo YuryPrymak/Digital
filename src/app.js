@@ -1,4 +1,7 @@
 import './js/main';
+import './js/sticky-nav';
+import './js/smooth-scroll';
+import './js/mobile-nav';
 
 import './scss/main.scss';
 import './scss/header.scss';
