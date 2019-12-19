@@ -3,7 +3,7 @@ export default (() => {
   const startStickSince = document.querySelector('main');
 
   const stickyNavToggle = function() {
-    if(window.pageYOffset >= startStickSince.offsetTop) {
+    if(window.pageYOffset >= startStickSince.offsetTop && window.innerWidth > 1400) {
       nav.classList.add('sticky-nav');
     } else {
       nav.classList.remove('sticky-nav');

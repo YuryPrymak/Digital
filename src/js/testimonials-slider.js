@@ -47,8 +47,9 @@ export default (() => {
   slider.addEventListener('touchmove', e => touchMove(e));
   slider.addEventListener('touchend', () => touchEnd());
   dotsWrapper.addEventListener('click', e => {
-    if(e.target && e.target.nodeName === 'LI' && e.target.className === 'dot') {
-      const index = [...e.target.parentElement.children].indexOf(e.target);
+    if(e.target && e.target.nodeName === 'BUTTON' && e.target.className === 'dot') {
+      const parent = e.target.parentElement;
+      const index = [...parent.parentElement.children].indexOf(parent);
       changeSlide(index);
     }
   });
