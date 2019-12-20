@@ -11,6 +11,7 @@
   position: relative;
   display: flex;
   margin: 0 auto;
+  overflow: hidden;
 
   @include media-md {
     flex-direction: column;
@@ -111,6 +112,7 @@
     width: 73%;
     position: relative;
     overflow: hidden;
+    opacity: 0;
 
     @include media(1400px) {
       width: 65%;

@@ -93,7 +93,7 @@
     }
   }
 
-  .services {
+  .services-bg-wrapper {
     width: 100%;
     max-width: 940px;
     position: relative;
@@ -135,6 +135,7 @@
         position: relative;
         margin: 40px;
         padding-top: 115px;
+        opacity: 0;
 
         @include media-xl {
           width: calc(50% - 40px);

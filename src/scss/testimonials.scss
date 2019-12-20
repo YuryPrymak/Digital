@@ -54,6 +54,7 @@
       li {
         position: relative;
         padding-left: 50px;
+        opacity: 0;
 
         &:not(:last-child) {
           margin-bottom: 100px;
@@ -155,6 +156,7 @@
         max-width: 280px;
         position: relative;
         padding-top: 120px;
+        opacity: 0;
 
         @include media-xl {
           max-width: 700px;
