@@ -43,7 +43,6 @@
       margin: 0 0 30px auto;
       font-size: 48px;
       font-weight: 900;
-      font-family: 'Lato', sans-serif;
       text-transform: uppercase;
       text-align: right;
       line-height: 1.2;
@@ -64,7 +63,6 @@
       margin-bottom: 40px;
       font-size: 24px;
       font-weight: normal;
-      font-family: 'Lato', sans-serif;
       text-align: right;
       line-height: 1.2;
       color: #040404;
@@ -89,6 +87,10 @@
 
       @include media-lg {
         margin: 0 auto 20px auto;
+      }
+
+      &:focus {
+        box-shadow: 0 0 3px 1px #383738;
       }
     }
   }
@@ -191,7 +193,6 @@
           margin-bottom: 15px;
           font-size: 18px;
           font-weight: 900;
-          font-family: 'Lato', sans-serif;
           text-transform: uppercase;
           text-align: center;
           color: #fba419;
@@ -209,7 +210,6 @@
           margin: auto 0;
           font-size: 18px;
           font-weight: lighter;
-          font-family: 'Lato', sans-serif;
           text-align: center;
           color: #9b9b9b;
 

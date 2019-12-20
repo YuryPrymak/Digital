@@ -96,7 +96,6 @@
         margin-bottom: 15px;
         font-size: 17px;
         font-weight: bold;
-        font-family: 'Lato', sans-serif;
         text-transform: uppercase;
         color: #fff;
 
@@ -116,7 +115,6 @@
         display: block;
         font-size: 16px;
         font-weight: normal;
-        font-family: 'Lato', sans-serif;
         color: #fff;
 
         @include media-md {
@@ -145,7 +143,6 @@
     position: relative;
     font-size: 17px;
     font-weight: normal;
-    font-family: 'Lato', sans-serif;
     text-align: center;
     color: #fff;
     z-index: 1;
@@ -165,7 +162,6 @@
     a {
       font-size: 17px;
       font-weight: normal;
-      font-family: 'Lato', sans-serif;
       text-align: center;
       color: #fff;
       @include transition(color, .2s, ease-in-out);

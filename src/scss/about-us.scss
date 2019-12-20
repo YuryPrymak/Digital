@@ -46,7 +46,6 @@
       margin-bottom: 70px;
       font-size: 60px;
       font-weight: 900;
-      font-family: 'Lato', sans-serif;
       text-transform: uppercase;
       line-height: 1.2;
       color: #383738;
@@ -81,7 +80,6 @@
       margin-bottom: 40px;
       font-size: 24px;
       font-weight: normal;
-      font-family: 'Lato', sans-serif;
       line-height: 1.25;
       color: #040404;
 
@@ -104,6 +102,10 @@
     .btn-read-more {
       @include media-md {
         margin: 0 auto;
+      }
+
+      &:focus {
+        box-shadow: 0 0 3px 1px #383738;
       }
     }
   }
