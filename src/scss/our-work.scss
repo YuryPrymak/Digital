@@ -94,7 +94,6 @@
     flex-shrink: 3;
     align-self: stretch;
     position: relative;
-    opacity: 0;
 
     @include media-lg {
       max-width: 500px;

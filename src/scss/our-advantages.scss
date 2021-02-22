@@ -30,7 +30,6 @@
     display: block;
     flex-shrink: 3;
     @include objectFit(cover);
-    opacity: 0;
 
     @include media-lg {
       display: none;
@@ -105,7 +104,6 @@
           position: absolute;
           top: 0;
           left: -155px;
-          opacity: 0;
 
           @include media-xl {
             left: -100px;

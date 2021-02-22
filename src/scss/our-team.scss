@@ -164,7 +164,6 @@
         position: relative;
         margin-bottom: 15px;
         padding-top: 100%;
-        opacity: 0;
 
         @include media-xl {
           padding-top: 60%;
@@ -205,7 +204,6 @@
         letter-spacing: 1px;
         color: #fc9e20;
         white-space: nowrap;
-        opacity: 0;
 
         @include media-sm {
           font-size: 28px;
@@ -218,7 +216,6 @@
         text-align: center;
         color: #a3a3a3;
         white-space: nowrap;
-        opacity: 0;
 
         @include media-md {
           font-size: 24px;
