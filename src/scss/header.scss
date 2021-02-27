@@ -27,8 +27,13 @@
     }
 
     > ul {
+      width: 100%;
       display: flex;
       margin-top: 25px;
+
+      &:first-child {
+        justify-content: flex-end;
+      }
 
       @include media(1400px) {
         display: none;
@@ -61,10 +66,10 @@
       flex-direction: column;
       align-items: center;
       position: relative;
-      margin: 35px 100px 0 100px;
+      margin: 35px 270px 0 270px;
 
       @include media(1600px) {
-        margin: 35px 0 0 0;
+        margin: 35px 230px 0 230px;
       }
 
       @include media(1400px) {
