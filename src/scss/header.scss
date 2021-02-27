@@ -49,10 +49,6 @@
           font-size: 24px;
         }
 
-        @include media-sm {
-          font-size: 28px;
-        }
-
         &:hover {
           color: #fba419;
         }
@@ -217,12 +213,19 @@
 
       &:nth-of-type(1) {
         justify-content: flex-end;
-        top: 50%;
-        @include transform(translateY(-100%));
+        bottom: calc(50% + 50px);
+
+        @include media-md {
+          bottom: 50%;
+        }
       }
 
       &:nth-of-type(2) {
-        top: 50%;
+        top: calc(50% - 50px);
+
+        @include media-md {
+          top: 50%;
+        }
       }
 
       a {
@@ -238,10 +241,19 @@
       z-index: 99;
       background-color: rgba(34, 34, 34, .9);
 
+      &::after,
+      .logo {
+        display: none;
+      }
+
       .social {
         display: flex;
         margin-top: auto;
         padding-bottom: 20px;
+
+        @include media-md {
+          display: none;
+        }
       }
     }
 
