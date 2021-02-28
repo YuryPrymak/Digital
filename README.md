@@ -3,7 +3,6 @@
 ### Features
 - Has 8 different sections
 - Fully responsive
-- Scrolling animations
 
 ### Technologies
 - HTML5
